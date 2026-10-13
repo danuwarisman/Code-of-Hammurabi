@@ -1,0 +1,6 @@
+{
+  "name": "The Code of Hammurabi",
+  "description": "Website edukasi statis Kode Hammurabi (abad ke-18 SM) dengan 282 pasal Babilonia, prolog, epilog, dan analisis historis murni HTML dan CSS.",
+  "requestFramePermissions": [],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

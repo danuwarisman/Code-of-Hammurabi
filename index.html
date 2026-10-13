@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The Code of Hammurabi — Kitab Hukum Babilonia Kuno</title>
+  <meta name="description" content="Website edukasi lengkap Kode Hammurabi (k. 1750 SM): 282 pasal, monolit batu diorit hitam, prolog, epilog, dan analisis sosial Babilonia.">
+  <meta property="og:title" content="The Code of Hammurabi — Kitab Hukum Babilonia Kuno">
+  <meta property="og:description" content="Eksplorasi 282 pasal hukum Hammurabi, teks terjemahan R.F. Harper, ringkasan bahasa Indonesia, dan komparasi hukum kuno.">
+  <meta property="og:type" content="website">
+  <link rel="stylesheet" href="/css/bootstrap.min.css">
+  <link rel="stylesheet" href="/css/theme.css">
+</head>
+<body>
+  <!-- Aksesibilitas: Skip Link -->
+  <a href="#main-content" class="skip-link">Lewati ke Konten Utama</a>
+
+  <!-- Header & Navigasi Murni CSS (Checkbox Hack) -->
+  <header class="site-header">
+    <div class="nav-container">
+      <a href="index.html" class="brand-mark">
+        <span class="brand-seal-icon" aria-hidden="true">𒀭</span>
+        <span class="brand-text">KODE HAMMURABI</span>
+      </a>
+
+      <!-- Desktop Navigation -->
+      <nav class="desktop-nav" aria-label="Navigasi Utama">
+        <a href="index.html" class="active">Beranda</a>
+        <a href="hammurabi.html">Sang Raja &amp; Stele</a>
+        <a href="prolog.html">Prolog</a>
+        <a href="hukum.html">Daftar Hukum</a>
+        <a href="pasal-terkenal.html">Pasal Terkenal</a>
+        <a href="epilog.html">Epilog</a>
+        <a href="perbandingan.html">Perbandingan</a>
+        <a href="tentang.html">Tentang</a>
+      </nav>
+
+      <!-- Mobile Checkbox Toggle (Tanpa JS) -->
+      <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
+      <label for="nav-toggle" class="nav-toggle-label" aria-label="Buka Menu Navigasi">
+        <span>☰</span> <span>Menu</span>
+      </label>
+
+      <!-- Mobile Drawer Navigasi -->
+      <div class="mobile-drawer w-100">
+        <ul>
+          <li><a href="index.html" class="active">Beranda</a></li>
+          <li><a href="hammurabi.html">Sang Raja &amp; Stele Diorit</a></li>
+          <li><a href="prolog.html">Teks Prolog</a></li>
+          <li><a href="hukum.html">Daftar Hukum (282 Pasal)</a></li>
+          <li><a href="pasal-terkenal.html">Pasal-Pasal Terkenal</a></li>
+          <li><a href="epilog.html">Teks Epilog &amp; Kutukan</a></li>
+          <li><a href="perbandingan.html">Komparasi Hukum</a></li>
+          <li><a href="tentang.html">Tentang &amp; Lisensi</a></li>
+        </ul>
+      </div>
+    </div>
+
+    <!-- Subnav Rail Horizontal (Mudah Discroll di Ponsel) -->
+    <div class="subnav-rail" aria-label="Jelajahi Topik Cepat">
+      <div class="subnav-rail-inner">
+        <span class="text-gold small fw-bold text-uppercase me-1">Kategori:</span>
+        <a href="hukum-peradilan.html" class="subnav-link">1. Peradilan (1–5)</a>
+        <a href="hukum-pencurian.html" class="subnav-link">2. Pencurian (6–14)</a>
+        <a href="hukum-budak-kabur.html" class="subnav-link">3. Budak Kabur (15–20)</a>
+        <a href="hukum-kejahatan-properti.html" class="subnav-link">4. Properti (21–25)</a>
+        <a href="hukum-militer-pejabat.html" class="subnav-link">5. Prajurit (26–41)</a>
+        <a href="hukum-agraris.html" class="subnav-link">6. Agraris &amp; Irigasi (42–65)</a>
+        <a href="hukum-bagian-hilang.html" class="subnav-link">7. Bagian Hilang (66–99)</a>
+        <a href="hukum-perdagangan.html" class="subnav-link">8. Perdagangan &amp; Kedai (100–126)</a>
+        <a href="hukum-keluarga.html" class="subnav-link">9. Keluarga &amp; Waris (127–193)</a>
+        <a href="hukum-pidana.html" class="subnav-link">10. Pidana &amp; Talio (194–233)</a>
+        <a href="hukum-pelayaran.html" class="subnav-link">11. Pelayaran (234–240)</a>
+        <a href="hukum-sewa-upah.html" class="subnav-link">12. Sewa &amp; Upah (241–277)</a>
+        <a href="hukum-budak.html" class="subnav-link">13. Budak (278–282)</a>
+      </div>
+    </div>
+  </header>
+
+  <!-- Konten Utama -->
+  <main id="main-content" class="py-5">
+    <div class="container">
+      
+      <!-- HERO SECTION BERBENTUK STELE BABILONIA -->
+      <section class="stele-frame text-center mb-5" aria-labelledby="hero-heading">
+        
+        <!-- Relief Bagian Atas Stele: Hammurabi & Shamash (SVG Inline) -->
+        <div class="stele-relief mx-auto mb-4" style="max-width: 680px;">
+          <svg viewBox="0 0 500 180" width="100%" height="auto" aria-hidden="true" style="max-height: 160px;">
+            <defs>
+              <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+                <stop offset="0%" stop-color="#f5eedf" stop-opacity="0.9" />
+                <stop offset="50%" stop-color="#c8a24a" stop-opacity="0.8" />
+                <stop offset="100%" stop-color="#73541b" stop-opacity="0.9" />
+              </linearGradient>
+            </defs>
+            <!-- Latar Relief Prasasti Diorit -->
+            <rect x="10" y="10" width="480" height="160" rx="20" fill="#1b1a19" stroke="#c8a24a" stroke-width="1.5" stroke-dasharray="4 2"/>
+            <!-- Simbol Shamash: Sinar Surya Keadilan -->
+            <circle cx="250" cy="50" r="24" fill="none" stroke="url(#goldGrad)" stroke-width="2.5" />
+            <path d="M 250 16 L 250 84 M 216 50 L 284 50 M 226 26 L 274 74 M 226 74 L 274 26" stroke="#c8a24a" stroke-width="1.5" />
+            <!-- Siluet Tahta Dewa Shamash (Kanan) -->
+            <path d="M 330 140 L 330 70 L 370 70 L 370 140 Z" fill="#2d2925" stroke="#c8a24a" stroke-width="1.5" />
+            <circle cx="350" cy="55" r="12" fill="#c8a24a" />
+            <path d="M 320 85 Q 290 85 270 95" stroke="#c8a24a" stroke-width="2" fill="none" />
+            <!-- Tongkat Ukur & Cincin Keadilan yang Diserahkan -->
+            <circle cx="265" cy="95" r="6" stroke="#e6c875" stroke-width="1.5" fill="none" />
+            <line x1="265" y1="80" x2="265" y2="110" stroke="#e6c875" stroke-width="2" />
+            <!-- Siluet Raja Hammurabi Berdiri Khidmat (Kiri) -->
+            <path d="M 170 140 L 170 85 L 150 85 L 150 140 Z" fill="#2d2925" stroke="#c8a24a" stroke-width="1.5" />
+            <circle cx="160" cy="70" r="11" fill="#c8a24a" />
+            <path d="M 165 92 L 200 95 L 245 95" stroke="#c8a24a" stroke-width="2" fill="none" stroke-linecap="round" />
+            <!-- Teks Prasasti Bahasa Akkadia Dekoratif -->
+            <text x="250" y="155" text-anchor="middle" fill="#c9bfae" font-family="'Cinzel', serif" font-size="11" letter-spacing="3">DINAT MĪŠARIM ŠA ḪAMMURABI ŠARRUM</text>
+          </svg>
+          <p class="small text-gold mb-0 mt-2 font-monospace">Bas-relief Puncak Stele: Hammurabi Menerima Tongkat &amp; Cincin Keadilan dari Dewa Shamash</p>
+        </div>
+
+        <h1 id="hero-heading" class="display-4 text-gold mb-3">KODE HAMMURABI</h1>
+        <p class="lead text-sandstone reading-column mb-4">
+          Monolit batu diorit hitam setinggi 2,25 meter dari abad ke-18 SM. Memuat 282 klausul hukum tertulis terlengkap dari zaman kuno yang mengatur peradilan, perdagangan, keluarga, profesi, dan pertanggungjawaban sosial di Babilonia.
+        </p>
+
+        <!-- 3 CTA Utama Sesuai FR-2 -->
+        <div class="d-flex flex-wrap justify-content-center gap-3 mb-4">
+          <a href="hukum.html" class="btn-hammurabi-gold">
+            <span>⚖</span> Baca 282 Pasal
+          </a>
+          <a href="hammurabi.html" class="btn-hammurabi-outline">
+            <span>👑</span> Kenali Sang Raja &amp; Stele
+          </a>
+          <a href="pasal-terkenal.html" class="btn-hammurabi-outline">
+            <span>📜</span> Pasal-Pasal Terkenal
+          </a>
+        </div>
+
+        <!-- Metadata Ringkas Stele -->
+        <div class="row g-3 justify-content-center mt-3 pt-3 border-top border-secondary reading-column">
+          <div class="col-6 col-md-3">
+            <span class="d-block small text-muted text-uppercase">Tahun Terbit</span>
+            <strong class="text-sandstone font-monospace">k. 1750 SM</strong>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="d-block small text-muted text-uppercase">Material</span>
+            <strong class="text-sandstone">Diorit Hitam</strong>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="d-block small text-muted text-uppercase">Ditemukan</span>
+            <strong class="text-sandstone font-monospace">1901 (Susa)</strong>
+          </div>
+          <div class="col-6 col-md-3">
+            <span class="d-block small text-muted text-uppercase">Lokasi Saat Ini</span>
+            <strong class="text-sandstone">Museum Louvre, Paris</strong>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN: STRUKTUR KELAS SOSIAL BABILONIA -->
+      <section class="mb-5" aria-labelledby="social-class-heading">
+        <div class="text-center mb-4">
+          <h2 id="social-class-heading" class="text-gold">Tiga Kasta Sosial dalam Hukum Hammurabi</h2>
+          <p class="text-muted reading-column">
+            Hukum Babilonia tidak mengenal kesetaraan mutlak di hadapan hukum modern. Sanksi pidana dan ganti rugi perdata sepenuhnya ditentukan oleh status sosial korban dan pelaku.
+          </p>
+        </div>
+
+        <div class="row g-4">
+          <!-- Awilum -->
+          <div class="col-md-4">
+            <div class="card-babylon h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span class="cylinder-seal">I</span>
+                <div>
+                  <h3 class="h5 mb-0 text-gold">AWILUM</h3>
+                  <small class="text-muted">Bangsawan &amp; Warga Merdeka Penuh</small>
+                </div>
+              </div>
+              <p class="small text-secondary">
+                Kelas tertinggi yang mencakup bangsawan, pejabat kerajaan, pendeta kuil, dan pemilik tanah merdeka. Terhadap sesama Awilum berlaku asas <em>Lex Talionis</em> mutlak: mata ganti mata, patah tulang ganti patah tulang. Namun, denda ganti rugi yang harus mereka bayar ke kas kerajaan juga lebih tinggi.
+              </p>
+              <div class="mt-auto pt-2 border-top border-secondary">
+                <span class="social-tag social-tag-awilum">Hak Hukum Tertinggi</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Mushkenum -->
+          <div class="col-md-4">
+            <div class="card-babylon h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span class="cylinder-seal">II</span>
+                <div>
+                  <h3 class="h5 mb-0 text-lapis">MUSHKENUM</h3>
+                  <small class="text-muted">Rakyat Biasa / Ketergantungan Negara</small>
+                </div>
+              </div>
+              <p class="small text-secondary">
+                Warga merdeka kelas bawah, buruh tani, dan pengrajin yang tidak memiliki kemandirian tanah penuh. Bila tubuh seorang Mushkenum dicelakai oleh seorang Awilum, pelakunya tidak dimutilasi, melainkan hanya diwajibkan membayar kompensasi tunai perak (1 mana perak untuk mata atau tulang).
+              </p>
+              <div class="mt-auto pt-2 border-top border-secondary">
+                <span class="social-tag social-tag-mushkenum">Kompensasi Finansial</span>
+              </div>
+            </div>
+          </div>
+
+          <!-- Wardum -->
+          <div class="col-md-4">
+            <div class="card-babylon h-100">
+              <div class="d-flex align-items-center gap-3 mb-3">
+                <span class="cylinder-seal">III</span>
+                <div>
+                  <h3 class="h5 mb-0 text-clay">WARDUM</h3>
+                  <small class="text-muted">Budak Milik Istana atau Warga</small>
+                </div>
+              </div>
+              <p class="small text-secondary">
+                Budak yang diperoleh dari tawanan perang atau jeratan utang piutang. Mereka diperlakukan sebagai properti bernilai ekonomis tinggi: bila mata seorang budak dirusak, ganti rugi dibayarkan setengah nilai harganya kepada majikannya. Namun budak Babilonia dapat menikah dengan wanita merdeka dan memiliki tabungan pribadi.
+              </p>
+              <div class="mt-auto pt-2 border-top border-secondary">
+                <span class="social-tag social-tag-wardum">Kepemilikan Berharga</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN: PASAL-PASAL MONUMENTAL PILIHAN -->
+      <section class="mb-5" aria-labelledby="featured-heading">
+        <div class="d-flex justify-content-between align-items-end mb-4 border-bottom border-secondary pb-3 flex-wrap gap-2">
+          <div>
+            <h2 id="featured-heading" class="text-gold mb-1">Sorotan Pasal Monumental</h2>
+            <p class="text-muted mb-0">Ketentuan hukum yang mengubah sejarah peradaban peradilan dunia.</p>
+          </div>
+          <a href="pasal-terkenal.html" class="text-gold text-decoration-none fw-bold small">Lihat Semua Kurasi Pasal Terkenal →</a>
+        </div>
+
+        <div class="row g-4">
+          <!-- Pasal 196 -->
+          <div class="col-lg-6">
+            <div class="card-babylon h-100">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="cylinder-seal">196</span>
+                <span class="social-tag social-tag-awilum">Lex Talionis</span>
+              </div>
+              <h3 class="h5 text-gold">Hukum "Mata Ganti Mata"</h3>
+              <p class="fst-italic text-light">
+                "If a man destroy the eye of a man (gentleman), they shall destroy his eye."
+              </p>
+              <p class="small text-secondary mb-3">
+                <strong>Dalam Bahasa Sederhana:</strong> Jika seorang bangsawan membutakan mata bangsawan lain, maka matanya sendiri harus dibutakan sebagai pembalasan setimpal.
+              </p>
+              <div class="small text-muted">
+                <strong>Logika Sosial:</strong> Membatasi aksi balas dendam keluarga tanpa batas (blood feud) menjadi hukuman proporsional yang dieksekusi resmi oleh otoritas kota.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pasal 23 -->
+          <div class="col-lg-6">
+            <div class="card-babylon h-100">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="cylinder-seal">23</span>
+                <span class="social-tag social-tag-mushkenum">Tanggung Jawab Negara</span>
+              </div>
+              <h3 class="h5 text-gold">Ganti Rugi oleh Kas Pemerintah Kota</h3>
+              <p class="fst-italic text-light">
+                "If the brigand be not captured, the man who has been robbed shall make an itemized statement of his loss in the presence of the god, and the city and governor shall compensate him."
+              </p>
+              <p class="small text-secondary mb-3">
+                <strong>Dalam Bahasa Sederhana:</strong> Jika perampok tidak berhasil ditangkap aparat, maka pemerintah kota dan gubernur wajib mengganti seluruh harta korban yang dirampok.
+              </p>
+              <div class="small text-muted">
+                <strong>Logika Sosial:</strong> Konsep awal asuransi sosial dan restitusi negara: keamanan publik adalah tanggung jawab mutlak pemerintah wilayah.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pasal 117 -->
+          <div class="col-lg-6">
+            <div class="card-babylon h-100">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="cylinder-seal">117</span>
+                <span class="social-tag social-tag-wardum">Batas Perbudakan Utang</span>
+              </div>
+              <h3 class="h5 text-gold">Pembebasan Wajib Setelah 3 Tahun</h3>
+              <p class="fst-italic text-light">
+                "If a man be in debt and sell his wife, son, or daughter... for three years they shall work... in the fourth year they shall be given their freedom."
+              </p>
+              <p class="small text-secondary mb-3">
+                <strong>Dalam Bahasa Sederhana:</strong> Jika debitur terpaksa menjual anak atau istrinya untuk melunasi utang, mereka hanya boleh dipekerjakan selama 3 tahun; pada tahun ke-4 mereka wajib dimerdekakan secara mutlak.
+              </p>
+              <div class="small text-muted">
+                <strong>Logika Sosial:</strong> Menghindari perbudakan seumur hidup bagi warga asli Babilonia akibat gagal bayar utang komersial.
+              </div>
+            </div>
+          </div>
+
+          <!-- Pasal 229 -->
+          <div class="col-lg-6">
+            <div class="card-babylon h-100">
+              <div class="d-flex justify-content-between align-items-center mb-2">
+                <span class="cylinder-seal">229</span>
+                <span class="social-tag social-tag-awilum">Liabilitas Bangunan</span>
+              </div>
+              <h3 class="h5 text-gold">Tanggung Jawab Mutlak Arsitek &amp; Tukang</h3>
+              <p class="fst-italic text-light">
+                "If a builder build a house for a man and do not make its construction firm, and the house collapse and cause the death of the owner, that builder shall be put to death."
+              </p>
+              <p class="small text-secondary mb-3">
+                <strong>Dalam Bahasa Sederhana:</strong> Jika seorang tukang membangun rumah yang tidak kokoh sehingga roboh dan menewaskan pemiliknya, tukang tersebut wajib dihukum mati.
+              </p>
+              <div class="small text-muted">
+                <strong>Logika Sosial:</strong> Perlindungan konsumen paling ketat di dunia kuno terhadap kelalaian fatal profesi konstruksi.
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- BAGIAN: 14 KATEGORI HUKUM (NAVIGASI UTAMA) -->
+      <section class="mb-5" aria-labelledby="categories-heading">
+        <div class="text-center mb-4">
+          <h2 id="categories-heading" class="text-gold">Jelajahi 14 Kategori Hukum</h2>
+          <p class="text-muted reading-column">
+            Seluruh 282 klausul dipetakan secara terstruktur berdasarkan bidang kehidupan masyarakat Babilonia kuno.
+          </p>
+        </div>
+
+        <div class="row g-3">
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-peradilan.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 1 · Pasal 1–5</span>
+                <h3 class="h5 text-sandstone mt-1">Peradilan &amp; Saksi Palsu</h3>
+                <p class="small text-muted mb-0">Hukuman mati bagi penuduh tanpa bukti dan pemecatan hakim korup.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-pencurian.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 2 · Pasal 6–14</span>
+                <h3 class="h5 text-sandstone mt-1">Pencurian &amp; Penadahan</h3>
+                <p class="small text-muted mb-0">Pencurian properti kuil, penadahan barang tanpa kuitansi, penculikan anak.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-budak-kabur.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 3 · Pasal 15–20</span>
+                <h3 class="h5 text-sandstone mt-1">Pelarian Budak</h3>
+                <p class="small text-muted mb-0">Hukuman bagi yang menampung budak buronan dan imbalan penangkap budak.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-kejahatan-properti.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 4 · Pasal 21–25</span>
+                <h3 class="h5 text-sandstone mt-1">Pembobolan &amp; Perampokan</h3>
+                <p class="small text-muted mb-0">Pembobolan dinding, penjarahan saat kebakaran, kompensasi dari kas kota.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-militer-pejabat.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 5 · Pasal 26–41</span>
+                <h3 class="h5 text-sandstone mt-1">Prajurit Kerajaan</h3>
+                <p class="small text-muted mb-0">Tanah garapan dinas prajurit, larangan menyewa pengganti perang, tebusan tawanan.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-agraris.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 6 · Pasal 42–65</span>
+                <h3 class="h5 text-sandstone mt-1">Agraris &amp; Irigasi Kanal</h3>
+                <p class="small text-muted mb-0">Tanggung jawab tanggul jebol, sewa lahan bagi hasil, kebun kurma.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-bagian-hilang.html" class="text-decoration-none">
+              <div class="card-babylon h-100" style="border-style: dashed; border-color: rgba(200, 162, 74, 0.4);">
+                <span class="text-clay font-monospace small">Kategori 7 · Pasal 66–99</span>
+                <h3 class="h5 text-clay mt-1">Bagian yang Hilang (Terhapus)</h3>
+                <p class="small text-muted mb-0">5 kolom prasasti yang sengaja dikikis di masa kuno saat dijarah ke Elam.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-perdagangan.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 8 · Pasal 100–126</span>
+                <h3 class="h5 text-sandstone mt-1">Perdagangan, Utang &amp; Kedai</h3>
+                <p class="small text-muted mb-0">Kontrak agen niaga, pengawasan kedai minuman keras wanita, penitipan barang.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-keluarga.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 9 · Pasal 127–193</span>
+                <h3 class="h5 text-sandstone mt-1">Hukum Keluarga &amp; Waris</h3>
+                <p class="small text-muted mb-0">Perkawinan, mahar, hak istri yang sakit, perzinaan, warisan anak budak, adopsi.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-pidana.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 10 · Pasal 194–233</span>
+                <h3 class="h5 text-sandstone mt-1">Hukum Pidana &amp; Talio</h3>
+                <p class="small text-muted mb-0">Mata ganti mata, pemukulan antar kasta, malpraktik dokter, rumah roboh.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-pelayaran.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 11 · Pasal 234–240</span>
+                <h3 class="h5 text-sandstone mt-1">Pelayaran &amp; Perahu</h3>
+                <p class="small text-muted mb-0">Garansi perahu layak laut 1 tahun, tabrakan di jalur sungai Efrat, ganti muatan.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-sewa-upah.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 12 · Pasal 241–277</span>
+                <h3 class="h5 text-sandstone mt-1">Tarif Sewa &amp; Upah Buruh</h3>
+                <p class="small text-muted mb-0">Sewa lembu penumbuk, upah harian buruh tani, tukang kayu, lembu menanduk.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum-budak.html" class="text-decoration-none">
+              <div class="card-babylon h-100">
+                <span class="text-gold font-monospace small">Kategori 13 · Pasal 278–282</span>
+                <h3 class="h5 text-sandstone mt-1">Hukum Budak &amp; Hak Beli</h3>
+                <p class="small text-muted mb-0">Garansi penyakit bennu 1 bulan, pembebasan budak lokal, pembangkangan budak.</p>
+              </div>
+            </a>
+          </div>
+
+          <div class="col-md-6 col-lg-4">
+            <a href="hukum.html" class="text-decoration-none">
+              <div class="card-babylon h-100" style="background: rgba(200, 162, 74, 0.08); border-color: var(--gold);">
+                <span class="text-gold font-monospace small">Indeks Lengkap</span>
+                <h3 class="h5 text-gold mt-1">Telusur Grid 1–282</h3>
+                <p class="small text-secondary mb-0">Peta matriks langsung menuju setiap pasal dalam satu klik.</p>
+              </div>
+            </a>
+          </div>
+        </div>
+      </section>
+
+      <!-- KUTIPAN PROLOG STELE -->
+      <section class="card-babylon text-center py-4 px-3 mb-5 reading-column">
+        <span class="text-gold font-monospace small text-uppercase">Petikan Dari Prolog Monolit</span>
+        <blockquote class="blockquote my-3">
+          <p class="fs-5 fst-italic text-light">
+            "...Anu dan Enlil memanggil namaku, Hammurabi, pangeran yang bertakwa, untuk menegakkan keadilan di seluruh negeri, membinasakan kaum fasik dan jahat, mencegah yang kuat menindas yang lemah, dan menyinari negeri bagaikan matahari bagi bangsa kepala-hitam..."
+          </p>
+        </blockquote>
+        <a href="prolog.html" class="btn-hammurabi-outline py-2 px-3 small">Baca Teks Prolog Lengkap →</a>
+      </section>
+
+    </div>
+  </main>
+
+  <!-- Footer Murni HTML/CSS -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="row g-4">
+        <div class="col-lg-5">
+          <h5 class="text-gold mb-3">THE CODE OF HAMMURABI</h5>
+          <p class="small text-muted reading-column">
+            Website edukasi sejarah hukum Mesopotamia kuno. Disajikan murni menggunakan HTML5, CSS3, dan framework Bootstrap 5 CSS tanpa eksekusi JavaScript. Konten disadur dan diverifikasi dari monografi akademik Percy Handcock (1920) serta translasi Profesor Robert Francis Harper.
+          </p>
+          <p class="small text-muted mb-0">
+            Artefak asli disimpan di Departemen Antikuitas Timur Dekat, Museum Louvre, Paris (Sb 8).
+          </p>
+        </div>
+        <div class="col-6 col-lg-3">
+          <h5 class="text-sandstone mb-3">Navigasi Halaman</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="index.html">Beranda</a></li>
+            <li><a href="hammurabi.html">Sang Raja &amp; Stele Diorit</a></li>
+            <li><a href="prolog.html">Teks Prolog Lengkap</a></li>
+            <li><a href="hukum.html">Daftar Hukum (Indeks 1–282)</a></li>
+            <li><a href="pasal-terkenal.html">Pasal-Pasal Terkenal</a></li>
+            <li><a href="epilog.html">Teks Epilog &amp; Kutukan</a></li>
+            <li><a href="perbandingan.html">Komparasi Hukum Kuno &amp; Modern</a></li>
+            <li><a href="tentang.html">Tentang, Sumber &amp; Lisensi</a></li>
+          </ul>
+        </div>
+        <div class="col-6 col-lg-4">
+          <h5 class="text-sandstone mb-3">14 Bidang Hukum</h5>
+          <ul class="list-unstyled small d-flex flex-column gap-2 mb-0">
+            <li><a href="hukum-peradilan.html">1. Peradilan (1–5)</a></li>
+            <li><a href="hukum-pencurian.html">2. Pencurian (6–14)</a></li>
+            <li><a href="hukum-budak-kabur.html">3. Budak Kabur (15–20)</a></li>
+            <li><a href="hukum-kejahatan-properti.html">4. Properti (21–25)</a></li>
+            <li><a href="hukum-militer-pejabat.html">5. Prajurit &amp; Pejabat (26–41)</a></li>
+            <li><a href="hukum-agraris.html">6. Agraris &amp; Irigasi (42–65)</a></li>
+            <li><a href="hukum-bagian-hilang.html">7. Bagian yang Hilang (66–99)</a></li>
+            <li><a href="hukum-perdagangan.html">8. Perdagangan &amp; Kedai (100–126)</a></li>
+            <li><a href="hukum-keluarga.html">9. Keluarga &amp; Waris (127–193)</a></li>
+            <li><a href="hukum-pidana.html">10. Pidana &amp; Talio (194–233)</a></li>
+          </ul>
+        </div>
+      </div>
+      <div class="text-center pt-4 mt-4 border-top border-secondary small text-muted">
+        <p class="mb-0">Website The Code of Hammurabi · Versi 1.0 (Oktober 2026) · Standar Aksesibilitas WCAG AA · Murni HTML5 + CSS3</p>
+      </div>
+    </div>
+  </footer>
+</body>
+</html>
