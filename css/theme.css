@@ -45,6 +45,13 @@
     --bg-primary: #f7f3ea;
     --bg-surface: #efe7d6;
     --bg-card: #ffffff;
+    --gold: #805f12;
+    --gold-light: #9a741c;
+    --gold-dark: #62480d;
+    --lapis: #17467f;
+    --lapis-light: #1f4f91;
+    --clay: #8f4427;
+    --clay-light: #a8552f;
     --text-primary: #1b1a19;
     --text-secondary: #3e3a35;
     --text-muted: #6b6357;
@@ -142,6 +149,20 @@ p, li, blockquote {
 }
 .text-sandstone {
   color: var(--sandstone) !important;
+}
+
+/* Bootstrap's default utility colors are too low-contrast on the dark theme. */
+.text-secondary {
+  color: var(--text-secondary) !important;
+}
+.text-muted {
+  color: var(--text-muted) !important;
+}
+
+@media (prefers-color-scheme: light) {
+  .text-sandstone {
+    color: #6b4d1a !important;
+  }
 }
 
 /* Reading column constraint */
