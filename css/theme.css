@@ -854,3 +854,96 @@ p, li, blockquote {
     color: #000000 !important;
   }
 }
+
+/* =========================================================
+   TAMBAHAN FITUR INTERAKTIF JAVASCRIPT & UX POLISH
+   ========================================================= */
+
+/* Efek Kilau Emas saat Lompat ke Pasal (#hash) */
+@keyframes targetPasalPulse {
+  0%   { box-shadow: 0 0 0 0 rgba(200, 162, 74, 0.7); border-color: #e6c875; }
+  50%  { box-shadow: 0 0 28px 6px rgba(200, 162, 74, 0.35); border-color: #e6c875; background-color: rgba(200, 162, 74, 0.08); }
+  100% { box-shadow: 0 0 0 0 rgba(200, 162, 74, 0); }
+}
+
+.pasal-highlight-active {
+  animation: targetPasalPulse 2.4s ease-out;
+  border-color: var(--gold, #c8a24a) !important;
+}
+
+/* Progress Bar Baca di Atas Header */
+.reading-progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: linear-gradient(90deg, #c8a24a, #e6c875);
+  width: 0%;
+  z-index: 9999;
+  transition: width 0.1s ease-out;
+}
+
+/* Tombol Melayang Kembali ke Atas (Back to Top) */
+.btn-back-to-top {
+  position: fixed;
+  bottom: 24px;
+  right: 24px;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: #1b1a19;
+  border: 1.5px solid var(--gold, #c8a24a);
+  color: var(--gold, #c8a24a);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.2rem;
+  cursor: pointer;
+  opacity: 0;
+  visibility: hidden;
+  transform: translateY(12px);
+  transition: all 0.25s ease;
+  z-index: 1050;
+  box-shadow: 0 4px 14px rgba(0, 0, 0, 0.6);
+}
+
+.btn-back-to-top.show {
+  opacity: 1;
+  visibility: visible;
+  transform: translateY(0);
+}
+
+.btn-back-to-top:hover {
+  background: var(--gold, #c8a24a);
+  color: #121110;
+}
+
+/* Bilah Kontrol Baca & Filter Pasal */
+.ux-reading-toolbar {
+  background: rgba(27, 26, 25, 0.92);
+  border: 1px solid rgba(200, 162, 74, 0.35);
+  border-radius: 8px;
+  padding: 0.75rem 1rem;
+  margin-bottom: 1.5rem;
+  backdrop-filter: blur(6px);
+}
+
+/* Simulator Hakim Babilonia */
+.judge-verdict-box {
+  background: linear-gradient(145deg, #171615, #211e1b);
+  border: 1.5px solid var(--gold, #c8a24a);
+  border-radius: 10px;
+  padding: 1.5rem;
+  transition: all 0.3s ease;
+}
+
+.judge-select {
+  background-color: #141312 !important;
+  color: #e9e2d0 !important;
+  border: 1px solid rgba(200, 162, 74, 0.45) !important;
+}
+
+.judge-select:focus {
+  border-color: var(--gold, #c8a24a) !important;
+  box-shadow: 0 0 0 0.2rem rgba(200, 162, 74, 0.2) !important;
+}

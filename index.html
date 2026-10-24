@@ -15,7 +15,7 @@
   <!-- Aksesibilitas: Skip Link -->
   <a href="#main-content" class="skip-link">Lewati ke Konten Utama</a>
 
-  <!-- Header & Navigasi Murni CSS (Checkbox Hack) -->
+  <!-- Header & Navigasi -->
   <header class="site-header">
     <div class="nav-container">
       <a href="index.html" class="brand-mark">
@@ -35,7 +35,7 @@
         <a href="tentang.html">Tentang</a>
       </nav>
 
-      <!-- Mobile Checkbox Toggle (Tanpa JS) -->
+      <!-- Mobile Checkbox Toggle -->
       <input type="checkbox" id="nav-toggle" class="nav-toggle-input" aria-hidden="true">
       <label for="nav-toggle" class="nav-toggle-label" aria-label="Buka Menu Navigasi">
         <span>☰</span> <span>Menu</span>
@@ -219,6 +219,91 @@
               <div class="mt-auto pt-2 border-top border-secondary">
                 <span class="social-tag social-tag-wardum">Kepemilikan Berharga</span>
               </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- SIMULATOR INTERAKTIF: HAKIM BABILONIA (LEX TALIONIS) -->
+      <section id="simulator-hakim" class="mb-5" aria-labelledby="simulator-heading">
+        <div class="stele-frame p-4 p-md-5">
+          <div class="text-center mb-4">
+            <span class="text-gold font-monospace small text-uppercase">Simulator Peradilan Kuno</span>
+            <h2 id="simulator-heading" class="h3 text-gold mt-1">Sidang Hakim Babilonia: Kalkulator Lex Talionis</h2>
+            <p class="text-muted small reading-column mx-auto mb-0">
+              Pilih jenis perkara serta status sosial pelaku dan korban untuk melihat bagaimana Raja Hammurabi menjatuhkan vonis berdasarkan prasasti diorit (k. 1750 SM).
+            </p>
+          </div>
+
+          <div class="row g-3 mb-4">
+            <!-- Pilihan 1: Jenis Pelanggaran -->
+            <div class="col-md-4">
+              <label for="sim-crime" class="form-label small text-gold font-monospace text-uppercase">1. Jenis Perkara / Cedera</label>
+              <select id="sim-crime" class="form-select judge-select">
+                <option value="eye">Merusak / Membutakan Mata</option>
+                <option value="bone">Mematahkan Tulang</option>
+                <option value="tooth">Merontokkan Gigi</option>
+                <option value="slap">Menampar Pipi di Muka Umum</option>
+                <option value="miscarriage">Memukul Wanita Hamil (Keguguran)</option>
+                <option value="pregnant_death">Memukul Wanita Hamil (Hingga Tewas)</option>
+                <option value="surgery_fail">Operasi Tabib Gagal (Pasien Mati/Buta)</option>
+                <option value="house_collapse">Rumah Roboh Menewaskan Penghuni</option>
+              </select>
+            </div>
+
+            <!-- Pilihan 2: Kasta Pelaku -->
+            <div class="col-md-4">
+              <label for="sim-perp" class="form-label small text-gold font-monospace text-uppercase">2. Status / Kasta Pelaku</label>
+              <select id="sim-perp" class="form-select judge-select">
+                <option value="awilum">Awilum (Bangsawan / Warga Merdeka)</option>
+                <option value="mushkenum">Mushkenum (Rakyat Jelata)</option>
+                <option value="wardum">Wardum (Budak)</option>
+              </select>
+            </div>
+
+            <!-- Pilihan 3: Kasta Korban -->
+            <div class="col-md-4">
+              <label for="sim-victim" class="form-label small text-gold font-monospace text-uppercase">3. Status / Kasta Korban</label>
+              <select id="sim-victim" class="form-select judge-select">
+                <option value="awilum">Awilum (Bangsawan / Warga Merdeka)</option>
+                <option value="mushkenum">Mushkenum (Rakyat Jelata)</option>
+                <option value="wardum">Wardum (Budak Milik Orang)</option>
+              </select>
+            </div>
+          </div>
+
+          <!-- Kotak Output Putusan Hakim -->
+          <div id="sim-result-box" class="judge-verdict-box" aria-live="polite">
+            <div class="d-flex flex-wrap justify-content-between align-items-center border-bottom border-secondary pb-2 mb-3 gap-2">
+              <div class="d-flex align-items-center gap-2">
+                <span id="sim-pasal-badge" class="cylinder-seal">196</span>
+                <span id="sim-pasal-ref" class="text-gold fw-bold font-monospace">Rujukan: Pasal 196</span>
+              </div>
+              <span id="sim-category-tag" class="social-tag social-tag-awilum">Pembalasan Fisik (Lex Talionis)</span>
+            </div>
+
+            <h3 id="sim-verdict-title" class="h4 text-light mb-2">Vonis: Mata Pelaku Harus Dibutakan</h3>
+            <p id="sim-verdict-desc" class="text-secondary small mb-3">
+              Karena pelaku dan korban sama-sama berasal dari kelas bangsawan merdeka (Awilum), berlaku hukum pembalasan fisik setimpal mutlak tanpa bisa ditebus dengan perak.
+            </p>
+
+            <div class="p-3 rounded bg-dark border border-secondary small">
+              <div class="text-gold font-monospace mb-1">Kutipan Prasasti (Terjemahan R.F. Harper):</div>
+              <blockquote id="sim-quote" class="fst-italic text-sandstone mb-2">
+                "If a man destroy the eye of a man (gentleman), they shall destroy his eye."
+              </blockquote>
+              <div id="sim-economic-note" class="text-muted border-top border-secondary pt-2 mt-2">
+                <strong>Catatan Konteks:</strong> Hukuman ini dieksekusi oleh aparat peradilan kota untuk mencegah balas dendam berdarah antar-keluarga bangsawan.
+              </div>
+            </div>
+
+            <div class="mt-3 d-flex justify-content-between align-items-center flex-wrap gap-2">
+              <button type="button" id="sim-random-btn" class="btn-hammurabi-outline py-1 px-3 small">
+                🎲 Acak Kasus Sidang
+              </button>
+              <a id="sim-jump-link" href="hukum-pidana.html#pasal-196" class="text-gold text-decoration-none small fw-bold">
+                Baca Teks Lengkap Pasal Ini &rarr;
+              </a>
             </div>
           </div>
         </div>
@@ -483,14 +568,14 @@
     </div>
   </main>
 
-  <!-- Footer Murni HTML/CSS -->
+  <!-- Footer -->
   <footer class="site-footer">
     <div class="container">
       <div class="row g-4">
         <div class="col-lg-5">
           <h5 class="text-gold mb-3">THE CODE OF HAMMURABI</h5>
           <p class="small text-muted reading-column">
-            Website edukasi sejarah hukum Mesopotamia kuno. Disajikan murni menggunakan HTML5, CSS3, dan framework Bootstrap 5 CSS tanpa eksekusi JavaScript. Konten disadur dan diverifikasi dari monografi akademik Percy Handcock (1920) serta translasi Profesor Robert Francis Harper.
+            Website edukasi sejarah hukum Mesopotamia kuno. Disajikan menggunakan HTML5, CSS3, framework Bootstrap 5 CSS, dan fitur interaktif Vanilla JavaScript. Konten disadur dan diverifikasi dari monografi akademik Percy Handcock (1920) serta translasi Profesor Robert Francis Harper.
           </p>
           <p class="small text-muted mb-0">
             Artefak asli disimpan di Departemen Antikuitas Timur Dekat, Museum Louvre, Paris (Sb 8).
@@ -526,9 +611,12 @@
         </div>
       </div>
       <div class="text-center pt-4 mt-4 border-top border-secondary small text-muted">
-        <p class="mb-0">Website The Code of Hammurabi · Versi 1.0 (Oktober 2026) · Standar Aksesibilitas WCAG AA · Murni HTML5 + CSS3</p>
+        <p class="mb-0">Website The Code of Hammurabi · Versi 1.1 (Oktober 2026) · Standar Aksesibilitas WCAG AA · HTML5 + CSS3 + Vanilla JS</p>
       </div>
     </div>
   </footer>
+
+  <!-- Script Interaktif Global & Simulator Hakim -->
+  <script src="js/app.js" defer></script>
 </body>
 </html>
